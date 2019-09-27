@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List Test</title>
+  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+   
+     <script>
+         
+   $(document).ready(function() {
+
+	$('form').on('submit', function(event) {
+	  var text = $('#main-text').val()
+       $.post("http:127.0.0.1:5000",{mess:text});
+      
+    
+    	});
+
+});
+
+        </script>
+	
+    
+   
+		
+</head>
+<body>
+
+    
+        <textarea id="alltext" rows="10" cols="50" style="overflow-y: scroll;"></textarea><br>
+        <form method="post">
+        <textarea id="main-text" rows="1" cols="40"></textarea>
+        <button id="sum" type="submit" >Send</button>
+        </form>
+        
+     
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
